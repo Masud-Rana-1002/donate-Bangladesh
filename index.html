@@ -28,12 +28,12 @@
 
 <body id="body">
     <!-- header section start here -->
-    <header id="header" class="sticky top-1 z-10">
+    <header id="header" class="sticky backdrop-blur-sm bg-white/30 top-1 z-10 ">
         <!-- Navbar start here  -->
         <nav class="bg-nabBarColor py-5">
             <div class="navbar  container mx-auto">
                 <div class="navbar-start">
-                    <button class="btn px-8 bg-commonColor text-xl font-semibold">Blog</button>
+                    <button id="blogBtn" class="btn px-8 bg-commonColor text-xl font-semibold">Blog</button>
 
                 </div>
                 <div class="navbar-center flex gap-4 items-center justify-center text-xl font-semibold">
@@ -51,15 +51,33 @@
         <!-- Navbar end here  -->
         <!-- feature btn start here -->
          <div class="flex items-center justify-center my-16 gap-4">
-            <button class="btn px-8 bg-commonColor text-xl font-semibold">Donation</button>
-            <button class="btn px-8 bg-commonColor text-xl font-semibold">History</button>
+            <button id="donationBtn"  class="featureBtn btn px-8 bg-commonColor text-xl font-semibold">Donation</button>
+            <button id="historyBtn" class="featureBtn btn px-8  text-xl font-semibold">History</button>
          </div>
         <!-- feature btn end here -->
     </header>
     <!-- header section end here -->
      <main class="w-9/12 mx-auto">
         <!-- Donate Card start here -->
-        <section>
+        <section id="donationPage">
+             <!-- Open the modal using ID.showModal() method start-->
+             <dialog id="my_modal_1" class="modal">
+                <div class="modal-box flex flex-col justify-center items-center gap-3">
+                  <h3 class=" font-bold text-3xl">Congratulation !</h3>
+                  <div class="w-16">
+                    <img class="w-full" src="./assets/coin.png" alt="">
+                  </div>
+                  <p class=" text-lg">You Have Donated for Humankind</p>
+                  <p class=" text-2xl font-bold">SuccessFully</p>
+                  <div class="modal-action">
+                    <form method="dialog">
+                      <!-- if there is a button in form, it will close the modal -->
+                      <button class="btn text-lg font-semibold">close confirmation</button>
+                    </form>
+                  </div>
+                </div>
+              </dialog>
+               <!-- Open the modal using ID.showModal() method end -->
              <div class=" space-y-8">
                  <!-- Donate card 1 -->
                 <div class="card lg:card-side bg-base-100 shadow-sm p-6 border">
@@ -76,8 +94,8 @@
 
                       <h2 class="card-title">Donate for Flood at Noakhali, Bangladesh</h2>
                       <p> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
-                      <input type="text" placeholder="Write Donation Amount" class="input input-bordered  w-full " />
-                     <button class="donateNowBtn btn w-full  px-8 bg-commonColor text-xl font-semibold">Donate Now</button>
+                      <input id="input1" type="text" placeholder="Write Donation Amount" class="input input-bordered  w-full " />
+                     <button onclick="'hello'" class="donateNowBtn btn w-full  px-8 bg-commonColor text-xl font-semibold">Donate Now</button>
                       
                     </div>
                   </div>
@@ -97,13 +115,13 @@
                       <h2 class="card-title">Donate for Flood Relief in Feni,Bangladesh</h2>
                       <p> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
                       <input type="text" placeholder="Write Donation Amount" class="input input-bordered  w-full " />
-                      <button class="donateNowBtn btn w-full  px-8 bg-commonColor text-xl font-semibold">Donate Now</button>
+                      <button onclick="modal()"  class="donateNowBtn btn w-full  px-8 bg-commonColor text-xl font-semibold">Donate Now</button>
                     </div>
                   </div>
                  <!-- Donate card 3 -->
                 <div class="card lg:card-side bg-base-100 shadow-sm p-6 border">
                     <div class="flex-1 ">
-                        <img class="w-full" src="./assets/noakhali.png" alt="">
+                        <img class="w-full" src="./assets/quota-protest.png" alt="">
                     </div>
                     <div class="card-body flex-1">
                         <button class="btn w-52">
@@ -117,7 +135,7 @@
                       <p> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
                   
                       <input type="text" placeholder="Write Donation Amount" class="input input-bordered  w-full " />
-                      <button class="donateNowBtn btn w-full  px-8 bg-commonColor text-xl font-semibold">Donate Now</button>
+                     <button  class="donateNowBtn btn w-full  px-8 bg-commonColor text-xl font-semibold">Donate Now</button>
                     </div>
                   </div>
              </div>
@@ -125,7 +143,7 @@
         </section>
         <!-- Donate Card end here -->
          <!-- History start here -->
-        <section id="historySection" class="w-11/12 mx-auto mt-6 hidden">
+        <section id="historySection" class="w-11/12 mx-auto mt-6 ">
             
         </section>
          <!-- History end here -->
@@ -134,10 +152,10 @@
 
      </footer>
      <!-- javascript link -->
-
+   
+     <script src="./js/feature.js"></script>
      <script src="./js/utility.js"></script>
      <script src="./js/script.js"></script>
-     <script src="./js/feature.js"></script>
 </body>
 
 </html>

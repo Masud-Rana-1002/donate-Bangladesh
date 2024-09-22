@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--tailwindCss & daisyUI CDN link  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Fonts family link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <title>Donate Bangladesh</title>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                 nabBarColor: '#F9F7F3',
+                 commonColor: "#B4F461"
+              }
+            }
+          }
+        }
+      </script>
+</head>
+<body>
+    <header>
+        <nav class="bg-nabBarColor py-5">
+            <div class="navbar  container mx-auto">
+                <div class="navbar-start">
+                    <button id="homeBtn" class="btn px-8 bg-commonColor text-xl font-semibold">Home</button>
+
+                </div>
+                <div class="navbar-center flex gap-4 items-center justify-center text-xl font-semibold">
+                    <img src="./assets/logo.png" alt="">
+                    <p>Donate Bangladesh</p>
+                </div>
+                <div class="navbar-end">
+                   <div class="flex items-center justify-center gap-2">
+                        <img src="./assets/coin.png" alt="">
+                        <p class="text-xl font-semibold"><span id="availableBalance" class="mr-1">44000</span>BDT</p>
+                   </div>
+                </div>
+              </div>
+        </nav>
+    </header>
+    <main class="w-10/12 mx-auto mt-8">
+        
+        <div class="flex items-center gap-2 mb-5">
+            <h2 class="text-3xl font-bold">Important FAQ </h2>
+            <svg class="w-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z" />
+              </svg>
+        </div>
+        <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" checked="checked" />
+            <div class="collapse-title text-xl font-medium">What is the Document object Model (DOM)?</div>
+            <div class="collapse-content">
+              <p>The Document Object Model (DOM) is a programming interface for web documents. It represents the page so that programs can change the document structure, style, and content.</p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">How do you select an element from the DOM ?</div>
+            <div class="collapse-content">
+              <p>To select an element from the DOM, JavaScript provides several methods.
+                getElementById, getElementsByClassName, getElementsByTagName, querySelector,  querySelectorAll
+              </p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and why is useful ?</div>
+            <div class="collapse-content">
+              <p>Event delegation is a technique in the DOM where a single event listener is added to a parent element to manage events for all of its children, even those added dynamically. Instead of adding individual event listeners to each child element, the parent "delegates" the responsibility of handling events for its children.</p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using the DOM ?</div>
+            <div class="collapse-content">
+              <p>In the DOM, i can manipulate an element’s attributes and styles using various methods and properties provided by the DOM API. Setting an Attribute, Getting an Attribute, Removing an Attribute.
+                To modify the CSS styles of an element, the style property can be used. You can set styles directly in JavaScript using the style property, or manipulate classes using classList.
+              </p>
+            </div>
+          </div>
+    </main>
+    <script src="./js/faq.js"></script>
+</body>
+</html>
