@@ -26,9 +26,9 @@
       </script>
 </head>
 
-<body>
+<body id="body">
     <!-- header section start here -->
-    <header>
+    <header id="header" class="sticky top-1 z-10">
         <!-- Navbar start here  -->
         <nav class="bg-nabBarColor py-5">
             <div class="navbar  container mx-auto">
@@ -43,7 +43,7 @@
                 <div class="navbar-end">
                    <div class="flex items-center justify-center gap-2">
                         <img src="./assets/coin.png" alt="">
-                        <p class="text-xl font-semibold"><span class="mr-1">50000</span>BDT</p>
+                        <p class="text-xl font-semibold"><span id="availableBalance" class="mr-1">44000</span>BDT</p>
                    </div>
                 </div>
               </div>
@@ -70,14 +70,14 @@
                         <button class="btn w-52">
                              <div class="flex items-center justify-center gap-2">
                             <img src="./assets/coin.png" alt="">
-                            <p class="text-xl font-semibold"><span class="mr-1">50000</span>BDT</p>
+                            <p class="text-xl font-semibold"><span  class="mr-1">169100</span>BDT</p>
                             </div>
                         </button>
 
                       <h2 class="card-title">Donate for Flood at Noakhali, Bangladesh</h2>
                       <p> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
                       <input type="text" placeholder="Write Donation Amount" class="input input-bordered  w-full " />
-                     <button class="btn w-full  px-8 bg-commonColor text-xl font-semibold">DonateNow</button>
+                     <button class="donateNowBtn btn w-full  px-8 bg-commonColor text-xl font-semibold">Donate Now</button>
                       
                     </div>
                   </div>
@@ -90,14 +90,14 @@
                         <button class="btn w-52">
                              <div class="flex items-center justify-center gap-2">
                             <img src="./assets/coin.png" alt="">
-                            <p class="text-xl font-semibold"><span class="mr-1">50000</span>BDT</p>
+                            <p class="text-xl font-semibold"><span class="mr-1">950000</span>BDT</p>
                             </div>
                         </button>
 
                       <h2 class="card-title">Donate for Flood Relief in Feni,Bangladesh</h2>
                       <p> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
                       <input type="text" placeholder="Write Donation Amount" class="input input-bordered  w-full " />
-                      <button class="btn w-full  px-8 bg-commonColor text-xl font-semibold">DonateNow</button>
+                      <button class="donateNowBtn btn w-full  px-8 bg-commonColor text-xl font-semibold">Donate Now</button>
                     </div>
                   </div>
                  <!-- Donate card 3 -->
@@ -109,7 +109,7 @@
                         <button class="btn w-52">
                              <div class="flex items-center justify-center gap-2">
                             <img src="./assets/coin.png" alt="">
-                            <p class="text-xl font-semibold"><span class="mr-1">50000</span>BDT</p>
+                            <p class="text-xl font-semibold"><span class="mr-1">88000</span>BDT</p>
                             </div>
                         </button>
 
@@ -117,20 +117,27 @@
                       <p> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
                   
                       <input type="text" placeholder="Write Donation Amount" class="input input-bordered  w-full " />
-                      <button class="btn w-full  px-8 bg-commonColor text-xl font-semibold">DonateNow</button>
+                      <button class="donateNowBtn btn w-full  px-8 bg-commonColor text-xl font-semibold">Donate Now</button>
                     </div>
                   </div>
              </div>
             
         </section>
         <!-- Donate Card end here -->
+         <!-- History start here -->
+        <section id="historySection" class="w-11/12 mx-auto mt-6 hidden">
+            
+        </section>
+         <!-- History end here -->
      </main>
      <footer class="bg-nabBarColor mt-16 py-20">
 
      </footer>
      <!-- javascript link -->
-      <script src="./js/utility.js"></script>
-      <script src="./js/script.js"></script>
+
+     <script src="./js/utility.js"></script>
+     <script src="./js/script.js"></script>
+     <script src="./js/feature.js"></script>
 </body>
 
 </html>
