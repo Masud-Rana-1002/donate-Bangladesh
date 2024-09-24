@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
     
 <head>
     <meta charset="UTF-8">
@@ -19,17 +19,21 @@
               colors: {
                  nabBarColor: '#F9F7F3',
                  commonColor: "#B4F461"
-              }
+              },
+              fontFamily: {
+                
+                fontLexen : "Lexend"
+                }
             }
           }
         }
       </script>
 </head>
-<body>
-    <header>
+<body class="font-fontLexen">
+    <header class="sticky backdrop-blur-sm bg-white/30 top-0 z-10 ">
         <nav class="bg-nabBarColor py-5">
-            <div class="navbar  container mx-auto">
-                <div class="navbar-start">
+            <div class="navbar  container mx-auto flex-wrap justify-center md:justify-between items-center flex  gap-2">
+                <div>
                     <button id="homeBtn" class="btn px-8 bg-commonColor text-xl font-semibold">Home</button>
 
                 </div>
@@ -37,7 +41,7 @@
                     <img src="./assets/logo.png" alt="">
                     <p>Donate Bangladesh</p>
                 </div>
-                <div class="navbar-end">
+                <div>
                    <div class="flex items-center justify-center gap-2">
                         <img src="./assets/coin.png" alt="">
                         <p class="text-xl font-semibold"><span id="availableBalance" class="mr-1">44000</span>BDT</p>

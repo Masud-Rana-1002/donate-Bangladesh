@@ -10,8 +10,9 @@ return innerTextConvertToNumber
 
 function getInputValueById(id){
     const inputValue = id.value;
-    const inputValueConvertToNumber = parseFloat(inputValue);
+    const inputValueConvertToNumber = parseFloat(inputValue);   
     return inputValueConvertToNumber
+    
 }
 
 

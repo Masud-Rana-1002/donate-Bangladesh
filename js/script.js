@@ -8,7 +8,7 @@ for(let donateNowBtn of donateNowBtnClassName){
     donateNowBtn.addEventListener("click", function(event){
         const donateAmountInputValue = getInputValueById(event.target.parentNode.childNodes[7]);
         let availableBalance = getInnerTextById('availableBalance');
-        if(isNaN(donateAmountInputValue) || donateAmountInputValue <= 0){
+        if(isNaN(donateAmountInputValue) || donateAmountInputValue <= 0 ||typeof donateAmountInputValue !== 'number'){
             alert('Invalid Donation Amount')
             event.target.parentNode.childNodes[7].value ='';
             
